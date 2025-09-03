@@ -61,7 +61,7 @@ jobs:
           context: ${{ matrix.fluentd.version }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
-          push: false
+          push: true
           tags: |
             ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
